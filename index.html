@@ -1,29 +1,33 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div class="container">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h3 id="home-header">HOME</h3>
+            <div class="score-panel" id="home-el">0</div>
             <div>
-                <h3 id="home-header">HOME</h3>
-                <div class="score-panel" id="home-el">0</div>
-                <div>
-                    <button onclick="addOneHome()" class="adder" id="home-plus-one">+1</button>
-                    <button onclick="addTwoHome()" class="adder">+2</button>
-                    <button onclick="addThreeHome()" class="adder">+3</button>
-                </div>
-            </div>
-              <button id="reset" onclick="newGame()">New Game</button>
-            <div>
-                <h3 id="guest-header">GUEST</h3>
-                <div class="score-panel" id="guest-el">0</div>
-                <div>
-                    <button onclick="addOneGuest()" class="adder">+1</button>
-                    <button onclick="addTwoGuest()" class="adder">+2</button>
-                    <button onclick="addThreeGuest()" class="adder">+3</button>
-                </div>
+                <button onclick="addOneHome()" class="adder" id="home-plus-one">+1</button>
+                <button onclick="addTwoHome()" class="adder">+2</button>
+                <button onclick="addThreeHome()" class="adder">+3</button>
             </div>
         </div>
-        <script src="index.js"></script>
-    </body>
+        <button id="reset" onclick="newGame()">New Game</button>
+        <div>
+            <h3 id="guest-header">AWAY</h3>
+            <div class="score-panel" id="guest-el">0</div>
+            <div>
+                <button onclick="addOneGuest()" class="adder">+1</button>
+                <button onclick="addTwoGuest()" class="adder">+2</button>
+                <button onclick="addThreeGuest()" class="adder">+3</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
 </html>
